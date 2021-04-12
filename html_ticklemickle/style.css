@@ -46,7 +46,7 @@ html, body {
 .side_align_container_second {
 	margin:0 auto; width:100%; max-width: 1000px;
 }
-.side_align_container_third .side_align_faq_head .side_align_faq_navpills {
+.side_align_container_third, .side_align_faq_head, .side_align_faq_navpills {
 	margin:0 auto; width:100%; max-width: 880px;
 }
 .side_align_container_forth {
@@ -126,20 +126,6 @@ html, body {
     background-size: cover;
 }
 
-#nav_head {
-	vertical-align: middle; 
-	margin-left: 10px;
- 	font-family: NanumSquareR;
-  	font-size: 1.1em;
-  	font-weight: normal;
-  	font-stretch: normal;
-  	font-style: normal;
-  
-  	letter-spacing: normal;
-  	text-align: left;
-  	color: #707070;
-}
-
 .first_topic {
 	
 	width: 300px;
@@ -208,33 +194,25 @@ html, body {
   min-width: 345px;
 }
 
-.navhead_content{
-  vertical-align: middle;	
-	/*padding: 1.2rem;*/
-  color: #707070;
-  text-decoration:none !important;
-  font-family: NanumSquareB;
-  font-size: 1.1em;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-}
-
 .nav_content_detail_left{
 	float: left;
 }
 .nav_content_detail_right{
 	float: right;
 }
-.nav_content_detail_center{
-	text-align: center;
-	
+.nav_content_detail_left{
+	text-align: left;	
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.nav_content_detail_right{
+	text-align: right;	
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 }
 	
 .nav_padding {
-	padding: 0px 0px 15px 0px;
+	padding: 9px 0px 9px 0px !important;
 }
 
 #hr_inline {
@@ -256,7 +234,7 @@ html, body {
     background-color: #7900ab;
     border-top: 0px;
     margin-top: 1px !important;
-	width: 90%;
+	width: 100%;
 }
 
 #hr_third {
@@ -287,6 +265,20 @@ html, body {
 	margin: 0 auto;
 	/*border: 0.5px solid lightgrey;*/
 	background-color: white;
+}
+
+.card_common:hover{	
+	background-color: #7900ab;
+	color: white;
+}
+.card_common:hover > .card_title, .card_common:hover > .card_content_first,
+.card_common:hover > .card_head {
+	color: #f9f9f9;
+}
+.card_common:hover > #hr_inline,
+.card_common:hover > #hr_inline2 {
+	border: 0.1rem solid #f9f9f9;
+	background-color: #f9f9f9;
 }
 
 .card_common_test{	
@@ -510,21 +502,47 @@ html, body {
 	text-align: center;
 }
 
-#faq_head_image_div {
+#faq_head_image {
 	
 	/*background-color: #707070;
 	*width: 15rem;*/
-	height: 8rem;
+	max-height: 8rem; 
 
 }
 
 /********MOBILE VERSION**********/
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 750px) {
+
+	#nav_head {
+		vertical-align: middle; 
+		margin-left: 10px;
+		font-family: NanumSquareR;
+		font-size: 0.9em;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+
+		letter-spacing: normal;
+		text-align: left;
+		color: #707070;
+	}
+	
+	.navhead_content{
+	  vertical-align: middle;	
+		/*padding: 1.2rem;*/
+	  color: #707070;
+	  text-decoration:none !important;
+	  font-family: NanumSquareB;
+	  font-size: 0.9em;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	}
 
 	.faq_head_title {	
 		font-family: NanumSquareEB;
-		font-size: 1rem;
+		font-size: 1.1rem;
 		font-weight: normal;
 		font-stretch: normal;
 		font-style: normal;
@@ -533,13 +551,13 @@ html, body {
 		text-align: left;
 		color: #333333;	
 		
-		padding: 1rem 0 0rem 0;
+		padding: 0.3rem 0 0 0rem ;
 
 	}
 	.faq_head_content {
 
 		font-family: NanumSquareR;
-		font-size: 1rem;
+		font-size: 1.1rem;
 		font-weight: normal;
 		font-stretch: normal;
 		font-style: normal;
@@ -548,7 +566,7 @@ html, body {
 		text-align: left;
 		color: #333333;	
 		
-		padding: 1rem 0 0rem 0;
+		padding: 0.3rem 0 0 0rem ;
 	}
 	
 	#faq_head_info {
@@ -575,8 +593,8 @@ html, body {
 	}	
 	.nav-link {
 
-		min-width: 100px;
-		padding: 5px 0px !important;
+		min-width: 80px;
+		padding: 3px 0px !important;
 
 		font-family: NanumSquareB;
 		font-size: 1.2rem;
@@ -592,9 +610,14 @@ html, body {
 	#img_examine_qna {
 		width: 80%;
 	}
+	
+	#img_story_qna{
+		width: 85%;
+	}
+	
 	#faq_head_image{ 
 		width: 100%;
-    	margin: 10px 0 10px 0;
+    	margin: 4px 0 4px 0;
 	}
 	.faq_head_email, .faq_head_kakao{
 		margin: 10px 0 10px 0;
@@ -604,14 +627,104 @@ html, body {
 		margin: 40px auto;
 		height: 2px;
 		background-color: #7900ab;
+		border-top: 0px;
+	}
+	#pc_main_character, .hr_head_pc {
+		display: none;
 	}
 	
+	/*********************/
+	/******INTRODUCE******/
+	/*********************/
+	
+	#introduce_main_character_pc, #img_bottom_introduce_pc, #jump_br {
+		display: none;
+	}
+	
+	#introduce_cetner_text_main{
+		
+		text-align: center;
+		font-family: NanumSquareEB;
+		font-size: 3rem;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: center;
+		color: #7900ab;
+		
+		/*padding: 0px 5rem 0px 5rem;*/
+		margin-top: 50px;
+	}
+	#introduce_cetner_text_content{
+	  
+		font-family: NanumSquareEB;
+	  	font-size: 1.9rem;
+	  	font-weight: normal;
+	  	font-stretch: normal;
+	  	font-style: normal;
+	  	line-height: 1.5;
+	  	letter-spacing: normal;
+	  	text-align: center;
+	  	color: #333333;	
+		padding: 4rem;
+	}
+	#introduce_cetner_text_subcontent{
+		 
+		  font-family: SourceHanSansKR;
+		  font-size: 1.5rem;
+		  font-weight: normal;
+		  font-stretch: normal;
+		  font-style: normal;
+		  line-height: 1.45;
+		  letter-spacing: normal;
+		  text-align: left;
+		  color: #707070;
+		
+		  margin-top: 30px;
+		  margin-bottom: 30px;
+	}	
+	#hr_centerline{
+		width: 0.1px;
+		height: 100px;
+		/*border: 1px solid #7900ab;*/
+		border-left: 2px solid #7900ab;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
 	
 	
 }
 
 /********PC VERSION**********/
-@media screen and (min-width: 570px) {
+@media screen and (min-width: 750px) {
+
+	#nav_head {
+		vertical-align: middle; 
+		margin-left: 10px;
+		font-family: NanumSquareR;
+		font-size: 1.1em;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+
+		letter-spacing: normal;
+		text-align: left;
+		color: #707070;
+	}
+	.navhead_content{
+	  vertical-align: middle;	
+		/*padding: 1.2rem;*/
+	  color: #707070;
+	  text-decoration:none !important;
+	  font-family: NanumSquareB;
+	  font-size: 1.1em;
+	  font-weight: normal;
+	  font-stretch: normal;
+	  font-style: normal;
+	}
 
 	.faq_head_title {	
 		font-family: NanumSquareEB;
@@ -645,7 +758,7 @@ html, body {
 		max-width: 57rem;
 		
 		margin: 40px auto;
-		padding: 0 3rem;
+		padding: 0 1rem;
 	}
 	
 	.faq_head_navpills {
@@ -682,13 +795,85 @@ html, body {
 	#img_examine_qna {
 		width: 55%;
 	}
+	#img_story_qna{
+		width: 85%;
+	}
 	#hr_middleline {
 		max-width: 9rem;
 		margin: 40px auto;
 		height: 2px;
 		background-color: #7900ab;
 	}
+	#mobile_main_character, .hr_head_mobile {
+		display: none;
+	}
 	
+	/*********************/
+	/******INTRODUCE******/
+	/*********************/
+
+	.side_align_container_introduce {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1360px;
+	}
+	#introduce_main_character_mobile, #img_bottom_introduce_mobile {
+		display: none;
+	}
+	#introduce_cetner_text_main{
+		text-align: center;
+		font-family: NanumSquareEB;
+		font-size: 4rem;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.5;
+		letter-spacing: normal;
+		text-align: center;
+		color: #7900ab;
+			
+		margin-top: 100px;
+	}
+	
+	#introduce_cetner_text_content{
+	  
+		font-family: NanumSquareEB;
+	  	font-size: 2.5rem;
+	  	font-weight: normal;
+	  	font-stretch: normal;
+	  	font-style: normal;
+	  	line-height: 1.5;
+	  	letter-spacing: normal;
+	  	text-align: center;
+	  	color: #333333;	
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#introduce_cetner_text_subcontent{
+		 
+		  font-family: SourceHanSansKR;
+		  font-size: 1.4rem;
+		  font-weight: normal;
+		  font-stretch: normal;
+		  font-style: normal;
+		  line-height: 1.45;
+		  letter-spacing: normal;
+		  text-align: left;
+		  color: #707070;
+			  
+	      padding: 0px 10rem 0px 10rem;
+		  margin-top: 90px;
+		  margin-bottom: 90px;
+	}	
+	#hr_centerline{
+		width: 0.1px;
+		height: 228px;
+				/*border: 1px solid #7900ab;*/
+		border-left: 2px solid #7900ab;
+		text-align: center;
+		margin-top: 66px;
+		margin-bottom: 66px;
+	}
 	
 }
 
@@ -742,7 +927,7 @@ html, body {
     text-align:center;
 }
 
-#faq_body {
+#faq_body, #interest_survey_body, #interest_survey_questions_body {
 	background-color: #f9f9f9;
 }
 
@@ -773,5 +958,160 @@ html, body {
 }
 a:hover {
 	color: #333333 !important;
+}
+
+/*********************/
+/******INTRODUCE******/
+/*********************/
+
+#introduce_main_character {
+	text-align: center;	
+}
+.text_subcontent_detail{
+	padding: 20px !important;
+}
+
+/*********************/
+/***INTEREST SURVEY***/
+/*********************/
+
+#INT_SURV_start_button{
+	
+	font-family: NanumSquareR;
+	font-size: 1.5rem;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: 0.6px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #7900ab;
+	padding: 1.2rem 6.1rem;
+	border: 0px;
+    border-radius: 23px;
+	margin: 3rem 3rem 0rem 3rem;
+	
+}
+#interest_survey_body {
+	text-align: center;
+}
+#interest_survey_mainlogo_img {
+	margin-top: 80px;
+}
+#interest_survey_mainlogo_text {
+   
+  margin: 5px;	
+
+  font-family: NanumSquareR;
+  font-size: 1.1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #707070;
+	
+}
+#INT_SURV_main_img {
+	margin-top: 30px;
+}
+#INT_SURV_main_text {
+	
+  font-family: NanumSquareEB;
+  font-size: 3.1rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+	
+}
+#INT_SURV_sub_text {
+	
+  font-family: NanumSquareR;
+  font-size: 1.6rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+	
+  margin: 20px 0px;
+	
+}
+
+
+/*********************/
+/***INTEREST SURVEY***/
+/******QUESTION*******/
+
+.INT_SURV_QUEST_main_text {
+
+	font-family: NanumSquareEB;
+    font-size: 2.2rem	;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.62;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+		
+	margin:80px 0px 30px 0px;
+}
+
+#INT_SURV_QUEST_button_common{
+	
+	font-family: NanumSquareB;
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: 0.6px;
+	text-align: center;
+	
+	background-color: #7900ab;
+	padding: 1.2rem 2rem;
+	width: 60%;
+	
+	color: #666666;
+	background-color: #f9f9f9;
+	border: 0.1rem solid #7900ab;
+    border-radius: 23px;
+	margin: 2rem 3rem 0rem 3rem;
+	
+}
+#INT_SURV_QUEST_button_common:hover {
+   background-color: #7900ab;
+   color: #ffffff;
+}
+#question_progress_bar {
+	background-image: linear-gradient(to bottom,#7900ab,#3a0652 100%);
+	background-color: #7900ab;
+	color: #7900ab;
+}
+#question_progress {
+	height: 15px;
+	width: 60%;
+    margin: 0 auto;
+}
+.question_progress_common {
+	width: 100%;
+	margin-top: 65px;
+}
+
+#interest_survey_questions_wrapper{
+	max-width:375px;
+	margin:0 auto;
+}
+#question_footer {
+	max-width:375px;
+	margin:0 auto;
+	position: fixed; 
+	bottom:0px;
 }
 

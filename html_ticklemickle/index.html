@@ -20,11 +20,17 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="티끌미끌-함께하는 금융수다">
 		<meta property="og:description" content="처음이기에 헷갈리는 돈 이야기, 지금 바로 시작해요" />
-		<meta property="og:image" content="http://proxy.goorm.io//service/6055b1c8fa5b3cb5dc79ba36_d5gsL9BpB1MoJaWvoan.run.goorm.io/9080//file/load/image_thumnail.png?path=d29ya3NwYWNlJTJGaHRtbF90aWNrbGVtaWNrbGUlMkZpbWclMkZpbWFnZV90aHVtbmFpbC5wbmc=&docker_id=d5gsL9BpB1MoJaWvoan&secure_session_id=mqzVF1iZSe9eH31LRpW9-vG8LMYWjEfv">
-		<!-- <meta property="og:image" content="img/image_thumnail.png"> -->
-		
+		<meta property="og:image" content="http://proxy.goorm.io//service/6055b1c8fa5b3cb5dc79ba36_d5gsL9BpB1MoJaWvoan.run.goorm.io/9080//file/load/img_thumnail_main.png?path=d29ya3NwYWNlJTJGaHRtbF90aWNrbGVtaWNrbGUlMkZpbWclMkZpbWdfdGh1bW5haWxfbWFpbi5wbmc=&docker_id=d5gsL9BpB1MoJaWvoan&secure_session_id=L_tWuEBPHLSLFGui89MVU1-AL_GLwfk7">
+		<!-- <meta property="og:image" content="img/image_thumnail.png"> -->	
 		
 		<title>티끌미끌-함께하는 금융수다</title>
+		
+		<script type="text/javascript">   
+			$(document).ready( function() {
+				$("#mainpage_header").load("mainpage_header.html"); 
+				$("#pagesection_tail").load("mainpage_footer.html"); 
+			});
+		</script>
 		
 	</head>
 	
@@ -34,43 +40,11 @@
 		<!-- first section -->
 		<section class="page-section" id="pagesection1">
 			
-						<!-- Navigation-->
-        	
-			<nav style="padding: 15px 0 0 0;">
-			  <div class="side_align_container container-fluid ">
-					
-				  <div class="col-lg-4 col-xs-12 nav_padding">
-						
-					  <img style="width:7rem;" src="img/logo_1x.png"> 
-					  <span id="nav_head"> 티끌미끌 : 함께하는 금융수다 </span>
-				  </div>
-				  
-				  <div class="col-lg-4 col-xs-0 nav_padding">   </div>
-				  
-				  <div class="col-lg-4 col-xs-12 nav_padding">
-					
-					  <div class="col-lg-2 col-xs-2 nav_content_detail_center">
-						<a class="navhead_content" href="#">소개</a>  
-					  </div>
-					  
-					  <div class="col-lg-4 col-xs-4 nav_content_detail_center">
-						<a class="navhead_content" href="#">스터디 신청</a>
-					  </div>
-					  
-					  <div class="col-lg-3 col-xs-4 nav_content_detail_center">
-						
-						<a class="navhead_content" href="#">성향 분석</a>
-					  </div>
-					  
-					  <div class="col-lg-3 col-xs-2 nav_content_detail_center">
-						<a class="navhead_content" href="#">FAQ</a>  
-					  </div>					  
-				  </div>
-			  </div>
-				       
-			</nav>
+			<div id="mainpage_header">
 			
-			<hr class="side_align_container" id="hr_outline2">	
+			
+			</div>
+			
 			
 			
 			<!-- first main  --> 
@@ -91,22 +65,25 @@
 							</div>
 							<div class="col-lg-9" id="main_image"> 	
 									
+								<img id="pc_main_character" style="height:100%; float:right;" src="img/img_main_character.png"> 
 								
 								
+								<img id="mobile_main_character" style="height:100%; float:right;" src="img/img_main_character_mobile.png"> 
 								
 							</div>							
 						</div>
 					</div>
 				
-					<!-- card 1 -->
+					
 					<div class="side_align_container">
 						<div class="row">
+							
+							<!-- card 1 주식 -->
 							<div class="col-lg-4" style="margin-top: 10px;" >
-								<div class="card_common card_stock" id="card1">
-
+								<div class="card_common card_stock" id="card1" onclick="window.open('https://forms.gle/9a1nVmcBhe8DruUr9');">
 									<div class="card_head">
 										<img style="width:4rem;" src="img/ico_chart_main.png"> 
-										<span>주식</span>
+										<span class="card_title_head">주식</span>
 									</div>
 
 									<hr id="hr_inline2">
@@ -119,19 +96,19 @@
 									<hr id="hr_inline">
 
 									<div class="card_content_first">
-										<span>남들과 함께 시작하는 주식 공부 </span>	
+										<span>지금 바로 티끌미끌 신청하기</span>	
 										<img src="img/arrow.svg" align="right">
 										
 									</div>
 								</div>
 							</div>
 
-							<!-- card 2 -->
+							<!-- card 2 부동산-->
 							<div class="col-lg-4" style="margin-top: 10px;" >
-								<div class="card_common card_housing" id="card2">
+								<div class="card_common card_housing" id="card2" onclick="window.open('https://forms.gle/Lgeh2e4q9fcMWvJ67');">
 									<div class="card_head">
 										<img style="width:4rem;" src="img/ico_realestate_main.png"> 
-										<span>부동산</span>
+										<span class="card_title_head">부동산</span>
 									</div>
 
 									<hr id="hr_inline2">
@@ -144,7 +121,7 @@
 									<hr id="hr_inline">
 
 									<div class="card_content_first">
-										<span>지금 바로 부동산 공부 시작하기</span>	
+										<span>함께 시작하는 부동산 공부 신청하기</span>	
 										<img src="img/arrow.svg" align="right">
 									</div>
 
@@ -154,11 +131,11 @@
 
 
 							<div class="col-lg-4" style="margin-top: 10px;" >
-								<!-- card 3 -->
-								<div class="card_common card_finance" id="card3">
+								<!-- card 3 금융상품 -->
+								<div class="card_common card_finance" id="card3" onclick="window.open('https://forms.gle/qghyQFyuSrzHdh897');">
 									<div class="card_head">
 										<img style="width:4rem;" src="img/ico_financial_main.png"> 
-										<span>금융상품</span>
+										<span class="card_title_head">금융상품</span>
 									</div>
 
 									<hr id="hr_inline2">
@@ -171,7 +148,7 @@
 									<hr id="hr_inline">
 
 									<div class="card_content_first">
-										<span>지금 바로 금융상품 공부 시작하기</span>	
+										<span>공부 시작해서 재테크 어린이 탈출하기</span>	
 										<img src="img/arrow.svg" align="right">
 									</div>
 
@@ -323,7 +300,7 @@
 					
 						<!-- card 1 -->
 						<div class="col-lg-6">
-							<div id="card_test">
+							<div id="card_test" onclick="alert('준비중입니다.')";>
 								<span id="span_head" >STAUTS</span>
 								<hr id="hr_inline">
 
@@ -344,7 +321,7 @@
 
 						<!-- card 2 -->
 						<div class="col-lg-6">
-							<div id="card_test">
+							<div id="card_test" onclick="alert('준비중입니다.')";>
 								
 								<span id="span_head" >KNOWLEDGE</span>
 								<hr id="hr_inline">
@@ -493,30 +470,7 @@
 		
 		<!-- tail section -->
 		<section id="pagesection_tail">
-			<div class="company_init company_margin">
-				<span class="company_common2">개인정보 처리방침</span>
-				<span class="company_common2">이용약관</span>	
-				<span class="company_common2">위치기반 서비스 이용약관</span>
-				<span class="">맨 위로</span>
-				
-			</div>
-			<div class="company_id company_margin">
-				<span class="company_common">(주)금융을커피처럼</span>
-				<span class="company_common">서울특별시 강남구 XX대로 OO 빌딩</span>
-				<span class="company_common">대표이사 이준현</span>
-			</div>
-			<div class="company_number company_margin">
-				<div class="company_common">사업자등록번호 0000-0000-000</div>
-				<div class="company_common">통신판매업신고번호 제2021-서울강남-XXXX호</div>
-			</div>
-			<div class="company_contact company_margin">
-				<div class="company_common" >문의전화 070-1234-5678</div>
-				<div class="company_common">이메일 ticklemickle20@gmail.com</div>
-			</div>
-			
-			<div class="company_copyright">
-				<span class="">Copyright 2021 FINANCEWITHCOFFE All rights reserverd.</span>
-			</div>
+
 		</section>
 		
 		

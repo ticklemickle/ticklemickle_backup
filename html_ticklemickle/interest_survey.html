@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+
+		<link rel="stylesheet" href="style.css">
+		<!-- 합쳐지고 최소화된 최신 CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+		<!-- 부가적인 테마 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+		<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		
+		<link rel="shortcut icon" href="img/favicon.ico" type="img/favicon.ico">
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="티끌미끌-함께하는 금융수다">
+		<meta property="og:description" content="처음이기에 헷갈리는 돈 이야기, 지금 바로 시작해요" />
+		<meta property="og:image" content="http://proxy.goorm.io//service/6055b1c8fa5b3cb5dc79ba36_d5gsL9BpB1MoJaWvoan.run.goorm.io/9080//file/load/img_thumnail_main.png?path=d29ya3NwYWNlJTJGaHRtbF90aWNrbGVtaWNrbGUlMkZpbWclMkZpbWdfdGh1bW5haWxfbWFpbi5wbmc=&docker_id=d5gsL9BpB1MoJaWvoan&secure_session_id=L_tWuEBPHLSLFGui89MVU1-AL_GLwfk7">
+		<!-- <meta property="og:image" content="img/image_thumnail.png"> -->
+		
+
+		<script type="text/javascript">   
+			$(document).ready( function() {
+				$("#interest_survey_start_questions").load("interest_survey_questions.html"); 
+			});
+		</script>
+
+		<script>
+			$(function(){
+				$("#INT_SURV_start_button").click(function(){
+					$("#interest_survey_start_questions").show();
+					$("#interest_survey_start_main").hide();
+				})
+			} );
+			
+		</script>
+		<title>티끌미끌-금융성향분석</title>
+		
+		
+		
+	</head>
+	
+	<body id="interest_survey_body">
+		
+		<div id="interest_survey_start_main">
+			
+			<div onclick="location.href='index.html';">			
+				<div id="interest_survey_mainlogo_img">
+					<img style="width:7rem;" src="img/logo_1x.png"> 
+				</div>
+				<div id="interest_survey_mainlogo_text">
+					티끌미끌, 함께하는 금융수다
+				</div>
+			</div>
+			<img id="INT_SURV_main_img" style="width:25rem" src="img/img_main_character_mobile.png"> 
+
+			<div id="INT_SURV_main_text">
+				나의 재테크 성향은?
+			</div>
+
+			<div id="INT_SURV_sub_text">
+				MBTI 성격 유형만큼<br>
+				사람마다 다른 재테크 성향!<br>
+				나의 재테크 성향을 알아보고<br>
+				재테크 스터디를 함께할 친구를 찾아보아요!<br>
+			</div>
+
+			<button id="INT_SURV_start_button" onclick="startSurvey">
+				테스트 시작하기
+			</button>
+			
+		</div>
+		
+		<div id="interest_survey_start_questions" style="display:none;">
+			
+			
+		</div>
+		
+	</body>

@@ -20,12 +20,16 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="티끌미끌-함께하는 금융수다">
 		<meta property="og:description" content="처음이기에 헷갈리는 돈 이야기, 지금 바로 시작해요" />
-		<meta property="og:image" content="http://proxy.goorm.io//service/6055b1c8fa5b3cb5dc79ba36_d5gsL9BpB1MoJaWvoan.run.goorm.io/9080//file/load/image_thumnail.png?path=d29ya3NwYWNlJTJGaHRtbF90aWNrbGVtaWNrbGUlMkZpbWclMkZpbWFnZV90aHVtbmFpbC5wbmc=&docker_id=d5gsL9BpB1MoJaWvoan&secure_session_id=mqzVF1iZSe9eH31LRpW9-vG8LMYWjEfv">
+		<meta property="og:image" content="http://proxy.goorm.io//service/6055b1c8fa5b3cb5dc79ba36_d5gsL9BpB1MoJaWvoan.run.goorm.io/9080//file/load/img_thumnail_main.png?path=d29ya3NwYWNlJTJGaHRtbF90aWNrbGVtaWNrbGUlMkZpbWclMkZpbWdfdGh1bW5haWxfbWFpbi5wbmc=&docker_id=d5gsL9BpB1MoJaWvoan&secure_session_id=L_tWuEBPHLSLFGui89MVU1-AL_GLwfk7">
 		<!-- <meta property="og:image" content="img/image_thumnail.png"> -->
-		
-
 		<title>티끌미끌-FAQ</title>
 		
+		<script type="text/javascript">   
+			$(document).ready( function() {
+				$("#mainpage_header").load("mainpage_header.html"); 
+				$("#pagesection_tail").load("mainpage_footer.html"); 
+			});
+		</script>
 		
 		
 	</head>
@@ -35,43 +39,10 @@
 		<!-- first section -->
 		<section class="page-section" id="pagesection1">
 			
-			<!-- Navigation-->
-        	
-			<nav style="padding: 15px 0 0 0;">
-			  <div class="side_align_container container-fluid ">
-					
-				  <div class="col-lg-4 col-xs-12 nav_padding">
-						
-					  <img style="width:7rem;" src="img/logo_1x.png"> 
-					  <span id="nav_head"> 티끌미끌 : 함께하는 금융수다 </span>
-				  </div>
-				  
-				  <div class="col-lg-4 col-xs-0 nav_padding">   </div>
-				  
-				  <div class="col-lg-4 col-xs-12 nav_padding">
-					
-					  <div class="col-lg-2 col-xs-2 nav_content_detail_center">
-						<a class="navhead_content" href="#">소개</a>  
-					  </div>
-					  
-					  <div class="col-lg-4 col-xs-4 nav_content_detail_center">
-						<a class="navhead_content" href="#">스터디 신청</a>
-					  </div>
-					  
-					  <div class="col-lg-3 col-xs-4 nav_content_detail_center">
-						
-						<a class="navhead_content" href="#">성향 분석</a>
-					  </div>
-					  
-					  <div class="col-lg-3 col-xs-2 nav_content_detail_center">
-						<a class="navhead_content" href="#">FAQ</a>  
-					  </div>					  
-				  </div>
-			  </div>
-				       
-			</nav>
+			<div id="mainpage_header">
 			
-			<hr class="side_align_container" id="hr_outline2">	
+			
+			</div>		
 			
 		</section>
 		
@@ -83,29 +54,29 @@
 			<div class="side_align_faq_head">
 				<div id="faq_head_info">
 					
-					<div class="row">
+					<div class="row" >
 						
 					
-						<div class="col-lg-4 col-xs-4 col-sm-4" style="padding: 1rem 0 1rem 0;">							
+						<div class="col-lg-3 col-xs-3 col-sm-3" style="padding: 1.2rem 0 1.2rem 0;">							
 							<div id="faq_head_image_div">
-								<img id="faq_head_image" src="img/dummy_bugs.png"> 
+								<img id="faq_head_image" src="img/img_mikkle_qna.png"> 
 							</div>		
 						</div>	
 
-						<div class="col-lg-8 col-xs-8 col-sm-8" style="padding: 1.5rem 0 1.5rem 0;">							
+						<div class="col-lg-9 col-xs-9 col-sm-9" style="padding: 2rem 0 2rem 0;">	
 							<div class="col-lg-4 col-xs-4 col-sm-4" style="padding: 0rem 0rem 0rem 1rem;">							
-								<div class="faq_head_email">
+								<span class="faq_head_email">
 									<div class="faq_head_title">이메일</div>
 									<div class="faq_head_title">카카오톡 채널</div>
-								</div>	
+								</span>	
 								
 							</div>
 							
 							<div class="col-lg-8 col-xs-8 col-sm-8" style="padding: 0rem 0rem 0rem 1rem;">							
-								<div class="faq_head_kakao">
+								<span class="faq_head_kakao">
 									<div class="faq_head_content">ticklemickle20@gmail.com</div>
 									<div class="faq_head_content">티끌미끌</div>
-								</div>		
+								</span>		
 								
 							</div>
 							
@@ -127,7 +98,7 @@
 				<div class="faq_head_navpills"> 
 					<ul class="nav nav-pills nav-fill  nav-justified" id="nav_pills1">
 					  <li class="nav-item my_li">
-						<a class="nav-link border" data-toggle="tab" href="#tab1">#신청방법</a>
+						<a class="nav-link border active" data-toggle="tab" href="#tab1">#신청방법</a>
 					  </li>
 					  <li class="nav-item my_li">
 						<a class="nav-link border" data-toggle="tab" href="#tab2">#진행방식</a>
@@ -137,12 +108,27 @@
 						<a class="nav-link border" data-toggle="tab" href="#tab4">#결제/비용</a>
 					  </li>
 					  <li class="nav-item my_li">
-						<a class="nav-link border" style="padding: 5px 5px !important;" data-toggle="tab" href="#tab3">#스터디원 선정방식</a>
+						<a class="nav-link border" style="padding: 3px 5px !important;" data-toggle="tab" href="#tab3">#스터디원 선정방식</a>
 					  </li>
 					  <li class="nav-item my_li">
 						<a class="nav-link border" data-toggle="tab" href="#tab5">#COVID-19</a>
 					  </li>
 					</ul>
+					
+					<script> $(function () { // actvie 활성화 
+							//$(".nav-item > .active").css("color", "green");
+							$('.nav-link').click(function () { 
+								// .nav-link 클릭시 이전의 active 값 해제 후, 
+								//$(".nav-item > .active").css("color", "#999999"); 
+								$('.nav-link').removeClass('active'); 
+								// 클릭한 위치 active 적용 
+								$(this).addClass('active');
+								//$(".nav-item > .active").css("color", "yello");
+							});
+						}); 
+					</script>
+
+
 				</div>
 				
 				<hr id="hr_middleline">	
@@ -217,6 +203,9 @@
 								나뉘어 스터디를 진행하게 됩니다. 
 								모임은 월 2회, 3달을 1 시즌으로 구성하여 운영됩니다.
 							</div>
+							<div style="margin: 30px 20px; text-align:center">
+								<img style="width:100%;" src="img/img_season_qna.png"> 
+							</div>
 						</div>
 						  
 						  
@@ -245,7 +234,7 @@
 								통하여 결정하게 됩니다. 단, 과제는 해당 주의 스터디를 
 								참석하기 위한 가장 중요한 요소로 미재출시 스터디 참석이 
 								불가합니다. 과제는 팀과제로 마지막 모임때 최종 점수를 평가하게 됩니다.
-							</div>
+							</div>							
 						</div>
 					</div>
 					
@@ -305,6 +294,9 @@
 								1시즌은 3개월 동안 격주(총6회)로 진행되며,
 								24만원 (회당 4만원) 입니다.
 							</div>
+							<div style="margin-top:30px; text-align:center">	
+								<img id="img_story_qna" src="img/img_story_qna.png"> 
+							</div>	
 						</div>
 
 						<div class="faq_card2_full faq_card_full_common">
@@ -394,31 +386,7 @@
 				
 		<!-- tail section style="position: absolute; bottom: 0px;" -->
 		<section id="pagesection_tail" style="margin-top: 150px;">
- 
-			<div class="company_init company_margin">
-				<span class="company_common2">개인정보 처리방침</span>
-				<span class="company_common2">이용약관</span>	
-				<span class="company_common2">위치기반 서비스 이용약관</span>
-				<span class="">맨 위로</span>
-				
-			</div>
-			<div class="company_id company_margin">
-				<span class="company_common">(주)금융을커피처럼</span>
-				<span class="company_common">서울특별시 강남구 XX대로 OO 빌딩</span>
-				<span class="company_common">대표이사 이준현</span>
-			</div>
-			<div class="company_number company_margin">
-				<div class="company_common">사업자등록번호 0000-0000-000</div>
-				<div class="company_common">통신판매업신고번호 제2021-서울강남-XXXX호</div>
-			</div>
-			<div class="company_contact company_margin">
-				<div class="company_common" >문의전화 070-1234-5678</div>
-				<div class="company_common">이메일 ticklemickle20@gmail.com</div>
-			</div>
-			
-			<div class="company_copyright">
-				<span class="">Copyright 2021 FINANCEWITHCOFFE All rights reserverd.</span>
-			</div>
+
 		</section>
 		
 		
