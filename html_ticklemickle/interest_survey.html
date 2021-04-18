@@ -26,11 +26,9 @@
 
 		<script type="text/javascript">   
 			$(document).ready( function() {
-				$("#interest_survey_start_questions").load("interest_survey_questions.html"); 
+				$("#interest_survey_start_questions").load("interest_survey_questions.html");
 			});
-		</script>
-
-		<script>
+			
 			$(function(){
 				$("#INT_SURV_start_button").click(function(){
 					$("#interest_survey_start_questions").show();
@@ -53,9 +51,9 @@
 				<div id="interest_survey_mainlogo_img">
 					<img style="width:7rem;" src="img/logo_1x.png"> 
 				</div>
-				<div id="interest_survey_mainlogo_text">
+				<a id="interest_survey_mainlogo_text">
 					티끌미끌, 함께하는 금융수다
-				</div>
+				</a>
 			</div>
 			<img id="INT_SURV_main_img" style="width:25rem" src="img/img_main_character_mobile.png"> 
 
@@ -70,15 +68,13 @@
 				재테크 스터디를 함께할 친구를 찾아보아요!<br>
 			</div>
 
-			<button id="INT_SURV_start_button" onclick="startSurvey">
+			<button id="INT_SURV_start_button">
 				테스트 시작하기
 			</button>
 			
 		</div>
 		
 		<div id="interest_survey_start_questions" style="display:none;">
-			
-			
 		</div>
 		
 	</body>

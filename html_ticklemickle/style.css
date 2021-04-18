@@ -107,7 +107,7 @@ html, body {
 	padding-bottom: 12rem;
 }
 #pagesection_tail{
-	padding: 2rem 4rem 1rem 4rem;
+	padding: 2rem 2rem 1rem 2rem;
 	background-color: #000000;
 	opacity: 0.89;
 	color: #c1c1c1;
@@ -228,6 +228,13 @@ html, body {
     margin-bottom: 13px !important;
 }
 
+#hr_inlin3 {
+	background-color: #7900ab;
+	border: 0rem solid #7900ab;
+	height: 2px;
+	margin-top: 0px !important;
+    margin-bottom: 0px !important;	
+}
 
 #hr_outline2 {
 	height: 0.5px;
@@ -280,6 +287,26 @@ html, body {
 	border: 0.1rem solid #f9f9f9;
 	background-color: #f9f9f9;
 }
+.card_common:hover  .index_link,
+.card_common:hover  .ico_next,
+.index_link_white,
+.ico_next_white
+{
+	display: none;	
+}
+.card_common:hover .index_link_white,
+.card_common:hover .ico_next_white
+{
+	display: inline;	
+}
+
+.index_arrow{
+	float: right;
+	width: 4rem;
+}
+.index_arrow_check {
+	width: 4rem;
+}
 
 .card_common_test{	
 	max-width: 400px;
@@ -294,7 +321,7 @@ html, body {
 
 #card_test {
 	background-color: #222222;
-	padding: 15px 30px 10px 30px;
+	padding: 3rem;
 	margin-top: 30px;
 }
 
@@ -431,24 +458,26 @@ html, body {
 }
 .company_copyright {
 	float: right;
+	margin-top: 20px;
 }
 
 .company_common {
 	margin: 0.2rem;	
 }
 .company_common2 {
-	margin-right: 5.5rem;	
+	padding-left: 0px !important;
 }
 .company_margin {
 	margin: 10px 0px 10px 0px;
 }
 .company_id {
-	margin-top: 25px
+	/*margin-top: 25px */
 }
 .company_init {
+	max-width: 600px;
 	color: #c1c1c1;
 	font-family: NanumSquareEB;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -456,9 +485,10 @@ html, body {
     letter-spacing: normal;
     text-align: left;
 	
-	margin-top:5px;
+	margin: 1.1rem 0px;	
 }
 .company_id, .company_number, .company_contact, .company_copyright{
+	max-width: 600px;
 	color: #c1c1c1;
 	font-family: NanumSquareR;
     font-size: 1.1rem;
@@ -468,6 +498,7 @@ html, body {
     line-height: 1.67;
     letter-spacing: normal;
     text-align: left;
+	margin: 0.5rem 0rem;
 }
 
 .page4_card_title {
@@ -514,6 +545,12 @@ html, body {
 
 @media screen and (max-width: 750px) {
 
+	#faq_pagesection1 {
+		padding-bottom: 4rem;
+	}
+	#myhead_nav{
+		padding: 15px 0 0 0;
+	}
 	#nav_head {
 		vertical-align: middle; 
 		margin-left: 10px;
@@ -579,7 +616,7 @@ html, body {
 	
 	.faq_head_navpills {
 		max-width: 80rem;
-		margin: 40px auto;
+		margin: 4rem auto;
 		text-align: center;
 	}
 	.faq_content_navpills{
@@ -589,7 +626,9 @@ html, body {
 	}
 	.my_li {
   		display: inline-block !important;
+		float: none !important;
 		padding: 0 5px 0 5px;
+		margin: 10px 0px 0px 0px;
 	}	
 	.nav-link {
 
@@ -701,6 +740,12 @@ html, body {
 /********PC VERSION**********/
 @media screen and (min-width: 750px) {
 
+	#faq_pagesection1 {
+		padding-bottom: 4rem;
+	}
+	#myhead_nav {
+		padding: 45px 0 0 0;
+	}
 	#nav_head {
 		vertical-align: middle; 
 		margin-left: 10px;
@@ -757,7 +802,7 @@ html, body {
 		border: 1px solid #7900ab;
 		max-width: 57rem;
 		
-		margin: 40px auto;
+		margin: 0px auto 40px auto;
 		padding: 0 1rem;
 	}
 	
@@ -773,12 +818,14 @@ html, body {
 		text-align: center;
 	}
 	.my_li {
+		display: inline-block !important;
+		float: none !important;
 		padding: 0 5px 0 5px;
 	}
 	.nav-link {
 	
-		min-width: 140px;			
-		padding: 3px 0px !important;
+		/*min-width: 140px;			*/
+		padding: 3px 10px !important;
 		
 		font-family: NanumSquareB;
 		font-size: 1.6rem;
@@ -954,7 +1001,7 @@ html, body {
 }
 .nav-pills>li>a {
     border-radius: 30px !important;
-	border: 0.1rem solid #999999;
+	border: 0.18rem solid #999999;
 }
 a:hover {
 	color: #333333 !important;
@@ -996,7 +1043,7 @@ a:hover {
 	text-align: center;
 }
 #interest_survey_mainlogo_img {
-	margin-top: 80px;
+	margin-top: 60px;
 }
 #interest_survey_mainlogo_text {
    
@@ -1015,6 +1062,7 @@ a:hover {
 #INT_SURV_main_img {
 	margin-top: 30px;
 }
+
 #INT_SURV_main_text {
 	
   font-family: NanumSquareEB;
@@ -1085,19 +1133,37 @@ a:hover {
 	margin: 2rem 3rem 0rem 3rem;
 	
 }
+.INT_SURV_QUEST_progress_text{
+	font-family: NanumSquareB;
+  	font-size: 12px;
+  	font-weight: bold;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: 3.33;
+  	letter-spacing: 0.48px;
+  	text-align: center;
+  	color: #666666;
+	margin: 0 auto;
+}
 #INT_SURV_QUEST_button_common:hover {
    background-color: #7900ab;
    color: #ffffff;
 }
 #question_progress_bar {
-	background-image: linear-gradient(to bottom,#7900ab,#3a0652 100%);
-	background-color: #7900ab;
+	background-image: linear-gradient(to bottom,#7900ab,#7900ab 100%);
+	background-color: #f9f9f9 !important;
 	color: #7900ab;
+	border-radius: 50px;
+	
 }
 #question_progress {
-	height: 15px;
+	height: 1rem;
 	width: 60%;
     margin: 0 auto;
+	background-image: none;
+    background-color: #e2e2e2;
+	-webkit-box-shadow: none;
+  	box-shadow: none;
 }
 .question_progress_common {
 	width: 100%;
@@ -1114,4 +1180,159 @@ a:hover {
 	position: fixed; 
 	bottom:0px;
 }
+
+/*********************/
+/***INTEREST SURVEY***/
+/******RESULT*******/
+
+.loader {
+  margin: 0 auto;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #7900ab;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+#interest_survey_result {
+    margin: 0 3rem;	
+	
+	font-family: NanumSquareR;
+	font-size: 1.4rem;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: 1.86;
+  	letter-spacing: normal;
+  	text-align: left;
+  	color: #666666;
+}
+#ISR_title {
+	margin: 30px auto;
+	text-align: center;
+}
+#ISR_sub_title {
+  font-family: NanumSquareB;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: 0.56px;
+  text-align: center;
+  color: #666666;
+}
+#ISR_main_title {
+  font-family: NanumSquareEB;
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.55;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333333;
+}
+#ISR_procent_name {
+  font-family: NanumSquareEB;
+  font-size: 1.4rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: 0.56px;
+  text-align: center;
+  color: #7900ab;
+}
+#ISR_procent_common {
+	margin: 0 auto;
+	max-width: 30%;
+}
+.ISR_personality_main {
+  
+  font-family: NanumSquareEB;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: 0.56px;
+  text-align: left;
+  color: #333333;
+	
+}
+.ISR_question_common {
+	margin: 60px 0px;
+	
+}
+
+.ISR_kakao_button {
+	width: 90%;
+	font-family: NanumSquareB;
+	font-size: 1.3rem;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: 0.6px;
+	text-align: center;
+	
+	padding: 1.2rem 2rem;
+	
+	color: #707070;
+	
+	border: 0rem solid #707070;
+    border-radius: 23px;
+	margin: 5px 0px;
+}
+
+.ISR_retest_button{
+	width: 90%;
+	font-family: NanumSquareB;
+	font-size: 1.3rem;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	letter-spacing: 0.6px;
+	text-align: center;
+	
+	padding: 1.1rem 2rem;
+	
+	color: #ffffff;
+	background-color: #7900ab;
+	border: 0.1rem solid #7900ab;
+    border-radius: 23px;
+	margin: 5px 0px;
+	
+}
+
+#ISR_last_homepage_common {
+	margin: 15px 0px 90px 0px;
+	text-align: center;
+	
+	font-family: NanumSquareR;
+  	font-size: 1.1rem;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: 3.33;
+  	letter-spacing: normal;
+	
+  	color: #666666;
+	
+}
+
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 
