@@ -4,8 +4,6 @@
 		
 		<script type="text/javascript" src="https://developers.kakao.com/sdk/js/kakao.js"> </script>
 		
-		<script type="text/javascript" src="kakao_open_api.js"> </script>
-		
 		
 	</head>
 	
@@ -79,4 +77,19 @@
 		</div>		
 		
 	</body>
+	
+	
+	<script  type="text/javascript">
+				
+			function sendLinkCustom() {
+
+				Kakao.init('7a0f3a633bc4d0957fd9fc86dafd738e');  
+				Kakao.Link.sendCustom({
+					templateId: 51916 
+				});
+			}
+
+	</script>
+
+	
 </html>
